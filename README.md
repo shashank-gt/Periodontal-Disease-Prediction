@@ -33,5 +33,5 @@ Run **model.py** to train the model.
 Run **predict.py** to test a new image.
 Run **app.py** to start the web application.
 
-**Author**
+## Author
 Shashank H K
