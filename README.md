@@ -1,42 +1,37 @@
-# Periodontal-Disease-Prediction
-This project uses a Convolutional Neural Network (CNN) to predict periodontal (gum) disease from panoramic dental images. It applies K-Fold Cross-Validation to test model performance properly and performs binary classification (disease or no disease).
+# **Periodontal Disease Prediction**
 
-# Project Files
-model.py – Trains the CNN model using K-Fold cross-validation and saves the best model.
-predict.py – Loads the saved model and predicts the class (periodontal or not) for a new image.
-app.py – Flask-based web app that lets users upload a dental image and get a prediction.
+This project uses a **Convolutional Neural Network (CNN)** to detect periodontal (gum) disease from panoramic dental images. It performs **binary classification** (disease or no disease) and uses **5-Fold Cross-Validation** to properly evaluate model performance.
 
-# Features
-Preprocessing: All images are resized to 128x128 and normalized for VGG16 compatibility.
-CNN Architecture: Built with convolutional, pooling, and dense layers.
-K-Fold Cross-Validation: Data is split into 5 folds for better model evaluation.
-Evaluation Metrics: Accuracy, Precision, and Recall are calculated for each fold.
-Training Visualization: Plots for accuracy and loss over epochs.
+## **Project Files**
 
-# Dataset Structure
-dataset/
+**model.py** – Trains the CNN model using K-Fold Cross-Validation and saves the best model.
 
-│ ├── penyakit-periodontal/ # Images with periodontal disease
+**predict.py** – Loads the trained model and predicts the class for a new dental image.
 
-└── penyakit-non-periodontal/ # Images without the disease
+**app.py** – Flask web application that allows users to upload an image and receive a prediction.
 
-All images are RGB and resized to 128x128 pixels.
+## **Features**
 
-# Model Details
-Layers: Conv2D → ReLU → MaxPooling → Dense → Dropout → Output
-Optimizer: Adam
-Loss Function: Binary Crossentropy
-Final Activation: Sigmoid (for binary output)
+* Images resized to **128x128** and normalized
+* **CNN-based** binary classification
+* **5-Fold Cross-Validation**
+* Evaluation using **Accuracy, Precision, and Recall**
+* Training **accuracy and loss visualization**
 
-# Installation & Usage
-# 1. Install Required Libraries
-pip install tensorflow numpy matplotlib scikit-learn pandas flask
+## **Dataset**
 
-# 2. Train the model
-python model.py
+**dataset/**
 
-# 3. Predict for a new image
-python predict.py --image path_to_image.jpg
+* **penyakit-periodontal/**
+* **penyakit-non-periodontal/**
 
-# 4. Run web app
-python app.py
+## **Usage**
+
+Install required libraries: **tensorflow, numpy, matplotlib, scikit-learn, pandas, flask**.
+
+Run **model.py** to train the model.
+Run **predict.py** to test a new image.
+Run **app.py** to start the web application.
+
+## **Author**
+Shashank H K
