@@ -32,6 +32,3 @@ Install required libraries: **tensorflow, numpy, matplotlib, scikit-learn, panda
 Run **model.py** to train the model.
 Run **predict.py** to test a new image.
 Run **app.py** to start the web application.
-
-## Author
-Shashank H K
